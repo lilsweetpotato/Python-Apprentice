@@ -35,7 +35,7 @@ tina.color('black')
 tina.end_fill()
 tina.goto(10, 50)
 tina.begin_fill()
-tina.turn(90)
+
 tina.circle(50,180)
 tina.color('black')
 tina.end_fill()
