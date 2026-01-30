@@ -16,7 +16,7 @@ learning in the next few lessons.
 import turtle                           # Tell Python we want to work with the turtle
 turtle.setup(600,600,0,0)               # Set the size of the window
 
-tina = turtle.Turtle()                  # Create a turtle named tina
+tina = turtle.Turtleurtle()                  # Create a turtle named tina
 
 tina.speed('fastest')                   # Set the speed of the turtle to fastest
 
