@@ -13,31 +13,93 @@ to see how to use the turtle commands.
 import turtle                           # Tell Python we want to work with the turtle
 turtle.setup(600,600,0,0)               # Set the size of the window
 tina = turtle.Turtle()                  # Create a turtle named tina
+def eye(direction):
+    tina.right(180*direction)
+    tina.forward(35)
+    tina.right(90*direction)
+    tina.forward(25)
+    tina.right(90*direction)
+    tina.forward(18)
+    tina.right(90*direction)
+    tina.forward(25)
+    tina.begin_fill()
+    tina.left(180*direction)
+    tina.forward(25)
+    tina.right(90*direction)
+    tina.forward(18)
+    tina.right(90*direction)
+    tina.forward(25)
+    tina.color('black')
+    tina.end_fill()
+
+def square(side_length):
+    for i in range(4):
+        tina.forward(side_length)
+        tina.left(90)
+    
 
 # Use tina.circle() to draw a circle, and tina.goto() to move tina to a new location
 # Use tina.begin_fill(), tina.end_fill(), and tina.fillcolor() to fill in the shapes
+square(150)
+
+
+tina.goto(0, 150)
 tina.begin_fill()
-tina.circle(75)# Your code here
-tina.penup()
-tina.color('green')
+tina.right(90)
+tina.forward(40)
+tina.left(90)
+tina.forward(30)
+tina.left(90)
+tina.forward(20)
+tina.right(90)
+tina.forward(90)
+
+tina.right(90)
+tina.forward(20)
+tina.left(90)
+tina.forward(30)
+tina.goto(150, 150)
+tina.color('brown')
 tina.end_fill()
+
+tina.goto(150, 80)
+
+
+tina.right(180)
+tina.forward(35)
+tina.right(90)
+tina.forward(25)
+tina.right(90)
+tina.forward(18)
+tina.right(90)
+tina.forward(25)
 tina.begin_fill()
-tina.goto(-40, 90)
-tina.pendown()
-tina.circle(20)
+tina.left(180)
+tina.forward(25)
+tina.right(90)
+tina.forward(18)
+tina.right(90)
+tina.forward(25)
 tina.color('black')
 tina.end_fill()
-tina.penup()
-tina.goto(40, 90)
+
+
+tina.goto(0, 80)
+
+tina.right(90)
+eye(-1)
 tina.begin_fill()
-tina.circle(20)
-tina.color('black')
+tina.left(90)
+tina.forward(45)
+tina.right(90)
+tina.forward(20)
+tina.left(90)
+tina.forward(75)
+tina.left(90)
+tina.forward(20)
+tina.color('red')
 tina.end_fill()
-tina.goto(10, 50)
-tina.pendown
-tina.forward(10)
-tina.color('black')
-tina.end_fill()
+
 turtle.exitonclick()                    # Close the window when we click on it
 
 # Dont forget to check in your code!
