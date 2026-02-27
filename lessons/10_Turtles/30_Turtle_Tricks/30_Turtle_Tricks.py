@@ -14,6 +14,7 @@ import turtle                           # Tell Python we want to work with the t
 turtle.setup(600,600,0,0)               # Set the size of the window
 tina = turtle.Turtle()                  # Create a turtle named tina
 def eye(direction):
+  
     tina.right(180*direction)
     tina.forward(35)
     tina.right(90*direction)
@@ -41,7 +42,6 @@ def square(side_length):
 # Use tina.circle() to draw a circle, and tina.goto() to move tina to a new location
 # Use tina.begin_fill(), tina.end_fill(), and tina.fillcolor() to fill in the shapes
 square(150)
-
 
 tina.goto(0, 150)
 tina.begin_fill()
@@ -82,23 +82,47 @@ tina.right(90)
 tina.forward(25)
 tina.color('black')
 tina.end_fill()
-
+tina.penup()
 
 tina.goto(0, 80)
-
+tina.pendown()
 tina.right(90)
 eye(-1)
+
+tina.penup()
+tina.forward(80)
+tina.left(90)
+tina.forward(50)
+tina.left(90)
+
+
+tina.pendown()
 tina.begin_fill()
-tina.left(90)
-tina.forward(45)
+tina.forward(60)
 tina.right(90)
-tina.forward(20)
-tina.left(90)
-tina.forward(75)
-tina.left(90)
-tina.forward(20)
+tina.forward(50)
+tina.right(90)
+tina.forward(60)
 tina.color('red')
 tina.end_fill()
+
+
+tina.begin_fill()
+tina.left(180)
+tina.penup()
+tina.forward(60)
+tina.left(90)
+tina.forward(10)
+tina.left(90)
+tina.forward(30)
+tina.right(90)
+tina.forward(40)
+tina.color('white')
+tina.end_fill()
+tina.right(90)
+tina.forward(30)
+
+
 
 turtle.exitonclick()                    # Close the window when we click on it
 
